@@ -1,0 +1,7 @@
+**/*.settings
+**/META-INF
+**/org
+**/target
+*.classpath
+*.project
+*.jar
