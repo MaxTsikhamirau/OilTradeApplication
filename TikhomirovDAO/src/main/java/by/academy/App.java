@@ -6,6 +6,7 @@ import dao.SellerDAOImpl;
 import entity.Seller;
 
 
+
 public class App {
 	public static void main(String[] args) throws SQLException {
 		System.out.println("Hello World!");

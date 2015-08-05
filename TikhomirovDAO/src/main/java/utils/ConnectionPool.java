@@ -1,7 +1,7 @@
 package utils;
 
 import java.sql.SQLException;
-import java.util.Properties;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 import org.apache.commons.dbcp.BasicDataSource;
@@ -11,7 +11,7 @@ public class ConnectionPool {
 	
 	    private static ConnectionPool instance;
 	    private BasicDataSource dataSource;
-	    ResourceBundle rb=ResourceBundle.getBundle("resourses.database");
+	    ResourceBundle rb=ResourceBundle.getBundle("database",Locale.getDefault());
 	   
 	    private ConnectionPool() {
 	        dataSource = new BasicDataSource();
