@@ -2,7 +2,7 @@ package by.academy.tikhomirov.service;
 
 import java.sql.SQLException;
 import java.util.List;
-import by.academy.tikhomirov.entity.Role;
+import by.academy.tikhomirov.entity.*;
 import by.academy.tikhomirov.implem.RoleDAOImpl;
 import by.academy.tikhomirov.interf.GenericDAO;
 

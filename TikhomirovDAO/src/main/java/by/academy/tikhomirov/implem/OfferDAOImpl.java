@@ -9,10 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import by.academy.tikhomirov.entity.Offer;
-import by.academy.tikhomirov.entity.Seller;
-import by.academy.tikhomirov.entity.Sort;
-import by.academy.tikhomirov.entity.User;
+import by.academy.tikhomirov.entity.*;
+
+
 import by.academy.tikhomirov.interf.AbstractDAO;
 import by.academy.tikhomirov.interf.CustomOfferDAO;
 import utils.ConnectionPool;

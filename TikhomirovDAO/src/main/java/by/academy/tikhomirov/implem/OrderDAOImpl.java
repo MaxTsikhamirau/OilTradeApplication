@@ -1,21 +1,17 @@
 package by.academy.tikhomirov.implem;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import by.academy.tikhomirov.entity.Buyer;
+
 import by.academy.tikhomirov.entity.Order;
 import by.academy.tikhomirov.entity.Sort;
 import by.academy.tikhomirov.entity.User;
 import by.academy.tikhomirov.interf.AbstractDAO;
-import utils.ConnectionPool;
-import utils.DBUtils;
 
 public class OrderDAOImpl extends AbstractDAO<Order> {
 	private static final OrderDAOImpl instance = new OrderDAOImpl();
@@ -27,7 +23,7 @@ public class OrderDAOImpl extends AbstractDAO<Order> {
 		return instance;
 	}
 
-		@Override
+	@Override
 	protected String getQuery(String query) {
 		String SQLQuery = query;
 		ResourceBundle rb = ResourceBundle.getBundle("sqlquery", Locale.getDefault());
@@ -53,7 +49,7 @@ public class OrderDAOImpl extends AbstractDAO<Order> {
 			while (resultSet.next()) {
 				Order order = new Order();
 				order.setID(resultSet.getInt("ID"));
-				User user=new User();
+				User user = new User();
 				user.setName(resultSet.getString("name"));
 				order.setUser(user);
 				Sort sort = new Sort();
@@ -73,16 +69,16 @@ public class OrderDAOImpl extends AbstractDAO<Order> {
 			throws SQLException {
 		if (methodName == "create") {
 			User user = order.getUser();
-			Sort sort =order.getSort();
+			Sort sort = order.getSort();
 			preaparedStatement.setInt(1, user.getId());
 			preaparedStatement.setInt(2, sort.getID());
 			preaparedStatement.setInt(3, order.getQuantity());
-					}
+		}
 		if (methodName == "delete") {
 			preaparedStatement.setInt(1, order.getID());
 		}
 		if (methodName == "update") {
-			User user=new User();
+			User user = new User();
 			Sort sort = new Sort();
 			preaparedStatement.setInt(1, user.getId());
 			preaparedStatement.setInt(2, sort.getID());

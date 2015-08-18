@@ -3,13 +3,20 @@ package by.academy.tikhomirov.service;
 import java.sql.SQLException;
 import java.util.List;
 
-import by.academy.tikhomirov.entity.Offer;
+import by.academy.tikhomirov.entity.*;
+
 import by.academy.tikhomirov.implem.OfferDAOImpl;
 import by.academy.tikhomirov.interf.CustomOfferDAO;
 
 
 public class OfferService {
+	private static final OfferService instance = new OfferService();
+	private OfferService() {
+			}
 
+	public static OfferService getInstance() {
+		return instance;
+	}
 	CustomOfferDAO dao = OfferDAOImpl.getInstance();
 
 	public List<Offer> getAll() throws ClassNotFoundException, SQLException {

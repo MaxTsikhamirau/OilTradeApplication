@@ -2,13 +2,19 @@ package by.academy.tikhomirov.service;
 
 import java.sql.SQLException;
 import java.util.List;
-import by.academy.tikhomirov.entity.Order;
+import by.academy.tikhomirov.entity.*;
 import by.academy.tikhomirov.implem.OrderDAOImpl;
 import by.academy.tikhomirov.interf.GenericDAO;
 
 
 public class OrderService {
+	private static final OrderService instance = new OrderService();
+	private OrderService() {
+			}
 
+	public static OrderService getInstance() {
+		return instance;
+	}
 	GenericDAO<Order> dao = OrderDAOImpl.getInstance();
 
 	public List<Order> getAll() throws ClassNotFoundException, SQLException {

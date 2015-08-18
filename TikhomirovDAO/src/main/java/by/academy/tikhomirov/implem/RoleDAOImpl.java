@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import by.academy.tikhomirov.entity.Role;
+import by.academy.tikhomirov.entity.*;
 import by.academy.tikhomirov.interf.AbstractDAO;
 
 public class RoleDAOImpl extends AbstractDAO<Role> {

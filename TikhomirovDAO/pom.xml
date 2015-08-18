@@ -24,33 +24,33 @@
 			<artifactId>TikhomirovEntity</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-dbcp2</artifactId>
-			<version>2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-dbcp</groupId>
-			<artifactId>commons-dbcp</artifactId>
-			<version>1.2.2</version>
-		</dependency>
+
+<dependency>
+	<groupId>commons-dbcp</groupId>
+	<artifactId>commons-dbcp</artifactId>
+	<version>1.4</version>
+</dependency>
 
 		<dependency>
-			<groupId>commons-pool</groupId>
-			<artifactId>commons-pool</artifactId>
-			<version>1.6</version>
-		</dependency>
+	<groupId>commons-pool</groupId>
+	<artifactId>commons-pool</artifactId>
+	<version>1.6</version>
+</dependency>
 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.36</version>
+</dependency>
+
+		
+
+
+		
+
 	</dependencies>
 	<build>
 		<plugins>
-
-
-
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -61,7 +61,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib</classpathPrefix>
-							<mainClass>by.academy.App</mainClass>
+							<mainClass>daotest.Testingclass</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -88,10 +88,27 @@
 	</build>
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
+
+
+						<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>5.1.36</version>
+			</dependency>
+			<dependency>
+				<groupId>by.academy</groupId>
+				<artifactId>TikhomirovEntity</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-dbcp</groupId>
+				<artifactId>commons-dbcp</artifactId>
+				<version>1.4</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-pool</groupId>
+				<artifactId>commons-pool</artifactId>
+				<version>1.5.4</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

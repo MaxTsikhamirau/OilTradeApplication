@@ -3,9 +3,8 @@ package by.academy.tikhomirov.service;
 import java.sql.SQLException;
 import java.util.List;
 
-import by.academy.tikhomirov.entity.Buyer;
-import by.academy.tikhomirov.entity.Sort;
-import by.academy.tikhomirov.implem.BuyerDAOImpl;
+import by.academy.tikhomirov.entity.*;
+
 import by.academy.tikhomirov.implem.SortDAOImpl;
 import by.academy.tikhomirov.interf.GenericDAO;
 

@@ -4,15 +4,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import by.academy.tikhomirov.entity.Role;
-import by.academy.tikhomirov.entity.Seller;
-import by.academy.tikhomirov.entity.User;
+import by.academy.tikhomirov.entity.*;
+
+
 import by.academy.tikhomirov.interf.AbstractDAO;
 import by.academy.tikhomirov.interf.CustomUserDAO;
 import utils.ConnectionPool;
@@ -65,19 +65,20 @@ public class UserDAOImpl extends AbstractDAO<User>implements CustomUserDAO {
 			preparedStatement.setInt(1, user.getId());
 		}
 		if (methodName == "update") {
-			// Role role=seller.getRole();
+			Role role=user.getRole();
 
 			preparedStatement.setString(1, user.getName());
 			preparedStatement.setString(2, user.getLogin());
 			preparedStatement.setString(3, user.getPassword());
 			preparedStatement.setString(4, user.getCountry());
-			// preparedStatement.setInt(5, role.getID());
-			preparedStatement.setInt(5, user.getId());
+			 preparedStatement.setInt(5, role.getID());
+			preparedStatement.setInt(6, user.getId());
 
 		}
 		if (methodName == "delete") {
 			preparedStatement.setInt(1, user.getId());
 		}
+		
 	}
 
 	@Override
@@ -106,14 +107,14 @@ public class UserDAOImpl extends AbstractDAO<User>implements CustomUserDAO {
 		Connection connection = null;
 		PreparedStatement preStatement = null;
 		ResultSet resultSet = null;
-		List<User> users = null;
 		User user = null;
 		try {
+			
 			connection = ConnectionPool.getInstance().getConnection();
 			preStatement = connection.prepareStatement(getQuery("getAuthorizedUser"));
-			setParameters("getAuthorizedUser", preStatement, user);
+			preStatement.setString(1, password);
 			resultSet = preStatement.executeQuery();
-			user = initUser(resultSet, user);
+			user = initUser(resultSet);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -122,9 +123,12 @@ public class UserDAOImpl extends AbstractDAO<User>implements CustomUserDAO {
 		return user;
 	}
 
-	public User initUser(ResultSet resultSet, User user) {
+	public User initUser(ResultSet resultSet) {
+		User user=null;
 		try {
+			
 			while (resultSet.next()) {
+				user=new User();
 				user.setId(resultSet.getInt("ID"));
 				user.setName(resultSet.getString("name"));
 				user.setLogin(resultSet.getString("login"));

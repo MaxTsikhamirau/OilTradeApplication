@@ -91,7 +91,7 @@ public class Offer {
 
 	@Override
 	public String toString() {
-		return "Offer [ID=" + ID + ", user=" + user + ", sort=" + sort + ", quantity=" + quantity + ", price=" + price
+		return "Offer [ID=" + ID + ", user=" + user.getName() + ", sort=" + sort.getName() + ", quantity=" + quantity + ", price=" + price
 				+ "]";
 	}
 
