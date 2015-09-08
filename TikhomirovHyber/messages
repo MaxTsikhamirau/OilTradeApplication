@@ -1,0 +1,10 @@
+2015-09-08 04:45:33 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-08 04:45:36 INFO  UserDAOImpl:68 - Get Authorized User: User [user_id=3, login=dan, password=dan]
+2015-09-08 04:46:37 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-08 04:46:38 INFO  UserDAOImpl:68 - Get Authorized User: User [user_id=3, login=dan, password=dan]
+2015-09-08 05:02:04 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-08 05:02:06 INFO  UserDAOImpl:68 - Get Authorized User: User [user_id=3, login=dan, password=dan]
+2015-09-08 05:02:06 INFO  AbstractDAOH:35 - Start creating object
+2015-09-08 05:35:04 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-08 05:35:52 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-08 05:35:54 INFO  UserDAOImpl:68 - Get Authorized User: User [user_id=3, user_name=Daniel, login=dan, password=dan]

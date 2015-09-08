@@ -27,7 +27,18 @@ public enum CommandEnum {
         {
             this.command = new AddOfferCommand();
         }
+    },
+	CREATEUSER {
+        {
+            this.command = new CreateUserCommand();
+        }
+    },
+	REGISTRATE {
+        {
+            this.command = new RegistrateCommand();
+        }
     };
+
     ActionCommand command;
 
     public ActionCommand getCurrentCommand() {

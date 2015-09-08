@@ -24,29 +24,37 @@
 			<artifactId>TikhomirovEntity</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
-<dependency>
-	<groupId>commons-dbcp</groupId>
-	<artifactId>commons-dbcp</artifactId>
-	<version>1.4</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.3</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<dependency>
-	<groupId>commons-pool</groupId>
-	<artifactId>commons-pool</artifactId>
-	<version>1.6</version>
-</dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.3</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<dependency>
-	<groupId>mysql</groupId>
-	<artifactId>mysql-connector-java</artifactId>
-	<version>5.1.36</version>
-</dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
 
-		
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>1.6</version>
+		</dependency>
 
-
-		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.36</version><!--$NO-MVN-MAN-VER$-->
+		</dependency>
 
 	</dependencies>
 	<build>
@@ -90,7 +98,7 @@
 		<dependencies>
 
 
-						<dependency>
+			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>5.1.36</version>
@@ -108,7 +116,7 @@
 			<dependency>
 				<groupId>commons-pool</groupId>
 				<artifactId>commons-pool</artifactId>
-				<version>1.5.4</version>
+				<version>1.6</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

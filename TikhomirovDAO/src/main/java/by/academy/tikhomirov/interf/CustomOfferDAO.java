@@ -1,13 +1,12 @@
 package by.academy.tikhomirov.interf;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import by.academy.tikhomirov.entity.*;
+import by.academy.tikhomirov.exception.DAOException;
+
 
 public interface CustomOfferDAO extends GenericDAO<Offer> {
-	public List<Offer> sortByPrice() throws SQLException;
 
-	public List<Offer> sortByQuantity() throws SQLException;
-
+	public List<Offer> getAcceptableOffers(String sortName, int quantity) throws DAOException;
 }

@@ -1,46 +1,57 @@
 package by.academy.tikhomirov.service;
 
-import java.sql.SQLException;
+
 import java.util.List;
 
 import by.academy.tikhomirov.entity.*;
-
+import by.academy.tikhomirov.exception.DAOException;
 import by.academy.tikhomirov.implem.OfferDAOImpl;
 import by.academy.tikhomirov.interf.CustomOfferDAO;
-
+import by.academy.tikhomirov.service.exception.ServiceException;
 
 public class OfferService {
-	private static final OfferService instance = new OfferService();
-	private OfferService() {
-			}
 
-	public static OfferService getInstance() {
-		return instance;
-	}
 	CustomOfferDAO dao = OfferDAOImpl.getInstance();
 
-	public List<Offer> getAll() throws ClassNotFoundException, SQLException {
-		return dao.getAll();
+	public List<Offer> getAll() throws ServiceException {
+		try {
+			return dao.getAll();
+		} catch (DAOException e) {
+			throw new ServiceException("Servise GETALL method exception");
+				
+		}
 	}
 
-	public void create(Offer offer) throws SQLException {
-		dao.create(offer);
+	public void create(Offer offer) throws ServiceException {
+		try {
+			dao.create(offer);
+		} catch (DAOException e) {
+			throw new ServiceException("Servise CREATE method exception");
+		}
 	}
 
-	public void update(Offer offer) throws SQLException {
-		dao.update(offer);
+	public void update(Offer offer) throws ServiceException {
+		try {
+			dao.update(offer);
+		} catch (DAOException e) {
+			throw new ServiceException("Servise UPDATE method exception");
+		}
 	}
 
-	public void delete(Offer offer) throws SQLException {
-		dao.delete(offer);
+	public void delete(Offer offer) throws ServiceException {
+		try {
+			dao.delete(offer);
+		} catch (DAOException e) {
+			throw new ServiceException("Servise DELETE method exception");
+		}
 	}
 
-	public List<Offer> getSortedByQuantity() throws ClassNotFoundException, SQLException {
-		return dao.sortByQuantity();
-	}
-
-	public List<Offer> getSortedByPrice() throws ClassNotFoundException, SQLException {
-		return dao.sortByPrice();
+	public List<Offer> getAcceptableOffers(String sortName, int quantity) throws ServiceException {
+		try {
+			return dao.getAcceptableOffers(sortName, quantity);
+		} catch (DAOException e) {
+			throw new ServiceException("Servise GETACCEPTABLEOFFERS method exception");
+		}
 	}
 
 }

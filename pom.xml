@@ -10,6 +10,9 @@
   	<module>TikhomirovEntity</module>
   	<module>TikhomirovServise</module>
     <module>TikhomirovWeb</module>
+    <module>TikhomirovHyber</module>
+    <module>TikhomirovDAOHiber</module>
+    <module>TikhomirovVO</module>
   </modules>
  	<build>
 		<plugins>

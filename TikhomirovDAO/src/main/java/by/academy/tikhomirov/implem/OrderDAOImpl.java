@@ -7,13 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-
 import by.academy.tikhomirov.entity.Order;
 import by.academy.tikhomirov.entity.Sort;
 import by.academy.tikhomirov.entity.User;
+import by.academy.tikhomirov.exception.DAOException;
 import by.academy.tikhomirov.interf.AbstractDAO;
 
+
 public class OrderDAOImpl extends AbstractDAO<Order> {
+	
 	private static final OrderDAOImpl instance = new OrderDAOImpl();
 
 	private OrderDAOImpl() {
@@ -57,33 +59,45 @@ public class OrderDAOImpl extends AbstractDAO<Order> {
 				order.setSort(sort);
 				order.setQuantity(resultSet.getInt("quantity"));
 				orders.add(order);
+				logger.info("Init List of orders");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error("Failed to init List of orders");
 		}
 		return orders;
 	}
 
 	@Override
 	protected void setParameters(String methodName, PreparedStatement preaparedStatement, Order order)
-			throws SQLException {
-		if (methodName == "create") {
-			User user = order.getUser();
-			Sort sort = order.getSort();
-			preaparedStatement.setInt(1, user.getId());
-			preaparedStatement.setInt(2, sort.getID());
-			preaparedStatement.setInt(3, order.getQuantity());
-		}
-		if (methodName == "delete") {
-			preaparedStatement.setInt(1, order.getID());
-		}
-		if (methodName == "update") {
-			User user = new User();
-			Sort sort = new Sort();
-			preaparedStatement.setInt(1, user.getId());
-			preaparedStatement.setInt(2, sort.getID());
-			preaparedStatement.setInt(3, order.getQuantity());
-			preaparedStatement.setInt(4, order.getID());
+			throws DAOException {
+		try {
+
+			if (methodName == "create") {
+				User user = order.getUser();
+				Sort sort = order.getSort();
+				preaparedStatement.setInt(1, user.getId());
+				preaparedStatement.setInt(2, sort.getID());
+				preaparedStatement.setInt(3, order.getQuantity());
+				logger.info("Successful set parameters for " + methodName);
+			}
+			if (methodName == "delete") {
+				preaparedStatement.setInt(1, order.getID());
+				logger.info("Successful set parameters for " + methodName);
+			}
+			if (methodName == "update") {
+				User user = new User();
+				Sort sort = new Sort();
+				preaparedStatement.setInt(1, user.getId());
+				preaparedStatement.setInt(2, sort.getID());
+				preaparedStatement.setInt(3, order.getQuantity());
+				preaparedStatement.setInt(4, order.getID());
+				logger.info("Successful set parameters for " + methodName);
+			}
+		} catch (SQLException e) {
+			logger.error("Failed to set parameters");
+			throw new DAOException("Failed to set parameters");
+
 		}
 	}
 }

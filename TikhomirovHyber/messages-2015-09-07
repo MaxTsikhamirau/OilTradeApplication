@@ -1,0 +1,17 @@
+2015-09-07 22:04:17 INFO  AbstractDAOH:35 - Start creating object
+2015-09-07 22:04:24 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:07:24 INFO  AbstractDAOH:35 - Start creating object
+2015-09-07 22:07:26 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:08:13 INFO  AbstractDAOH:35 - Start creating object
+2015-09-07 22:08:15 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:09:26 INFO  AbstractDAOH:35 - Start creating object
+2015-09-07 22:09:28 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:09:40 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:10:32 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:12:05 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:12:21 INFO  AbstractDAOH:113 - Start getting by ID
+2015-09-07 22:13:24 INFO  AbstractDAOH:85 - Start deleting object: User [user_id=80, login=null, password=null]
+2015-09-07 22:13:26 INFO  AbstractDAOH:96 - Object User [user_id=80, login=login, password=password] is deleted
+2015-09-07 22:59:08 INFO  AbstractDAOH:85 - Start deleting object: User [user_id=80, login=null, password=null]
+2015-09-07 22:59:39 INFO  UserDAOImpl:60 - Start getting Authorized User
+2015-09-07 22:59:41 INFO  UserDAOImpl:77 - Get Authorized User: User [user_id=3, login=dan, password=dan]

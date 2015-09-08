@@ -16,23 +16,24 @@ public class LogInCommand implements ActionCommand {
         String page = null;
         
         
+        String login = request.getParameter("login");
         String password = request.getParameter("password");
              try {
-        	UserService userService=UserService.getInstance();             
-            User user = userService.getAuthorizedUser(password);
+        	UserService userService=new UserService();             
+            User user = userService.getAuthorizedUser(login, password);
             if (user != null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", user);
-                System.out.println("userrole "+user.getRole().getName());
+               // System.out.println("userrole "+user.getRole().getName());
                  if(user.getRole().getName().equals("buyer")){
-                	page = "greetingBuyerPage.jsp";
+                	page = "/WEB-INF/pages/greetingBuyerPage.jsp";
                 }
                 else{
-                	page = "greetingSellerPage.jsp";
+                	page = "/WEB-INF/pages/greetingSellerPage.jsp";
                 }
                
             } else {
-                page = "error.jsp";
+                page = "/WEB-INF/pages/error.jsp";
             }
         } catch (SQLException e) {
             e.printStackTrace();
