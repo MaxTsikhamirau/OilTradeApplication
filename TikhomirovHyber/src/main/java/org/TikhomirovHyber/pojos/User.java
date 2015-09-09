@@ -140,11 +140,11 @@ public class User implements Serializable {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((login == null) ? 0 : login.hashCode());
-		result = prime * result + ((offers == null) ? 0 : offers.hashCode());
-		result = prime * result + ((orders == null) ? 0 : orders.hashCode());
+		//result = prime * result + ((offers == null) ? 0 : offers.hashCode());
+		//result = prime * result + ((orders == null) ? 0 : orders.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + ((roles == null) ? 0 : roles.hashCode());
-		result = prime * result + ((userDetail == null) ? 0 : userDetail.hashCode());
+		//result = prime * result + ((roles == null) ? 0 : roles.hashCode());
+		//result = prime * result + ((userDetail == null) ? 0 : userDetail.hashCode());
 		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		result = prime * result + ((user_name == null) ? 0 : user_name.hashCode());
 		return result;

@@ -1,4 +1,4 @@
-package org.TikhomirovHyber.utils;
+package org.TikhomirovServiseHyber.utils;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -35,13 +35,14 @@ public class VOtoPOJOTransformation {
 
 	public static User userTransform(UserVO userVO) {
 		//UserDetail userDetail = userDetailTransform(userVO);
-		Set<RoleVO> rolesVO = userVO.getRolesVO();
-		Set<Role> roles =roleTransform(rolesVO);
+		//Set<RoleVO> rolesVO = userVO.getRolesVO();
+		//Set<Role> roles =roleTransform(rolesVO);
 		User user = new User();
+		user.setUser_name(userVO.getUser_name());
 		user.setLogin(userVO.getLogin());
 		user.setPassword(userVO.getPassword());
 		//user.setUserDetail(userDetail);
-		user.setRoles(roles);
+		//user.setRoles(roles);
 		
 		return user;
 	}

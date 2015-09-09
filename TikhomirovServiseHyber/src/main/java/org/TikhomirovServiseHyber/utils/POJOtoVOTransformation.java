@@ -1,5 +1,6 @@
-package org.TikhomirovHyber.utils;
+package org.TikhomirovServiseHyber.utils;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -15,13 +16,14 @@ public class POJOtoVOTransformation {
 
 		UserVO userVO = new UserVO();
 		userVO.setUser_id(user.getUser_id());
+		userVO.setUser_name(user.getUser_name());
 		userVO.setCity(user.getUserDetail().getCity());
 		userVO.setCountry(user.getUserDetail().getCountry());
 		userVO.setTelephone(user.getUserDetail().getTelephone());
 		userVO.setLogin(user.getLogin());
 		userVO.setPassword(user.getPassword());
-		Set<Role> roles = user.getRoles();
-		userVO.setRolesVO(extract(roles));
+		// Set<Role> roles = user.getRoles();
+		// userVO.setRolesVO(extract(roles));
 
 		return userVO;
 	}
@@ -38,7 +40,8 @@ public class POJOtoVOTransformation {
 	}
 
 	public static List<UserVO> extract(List<User> users) {
-		List<UserVO> usersVO = null;
+		List<UserVO> usersVO = new ArrayList<>();
+		// usersVO=null;
 		for (User user : users) {
 			UserVO userVO = extract(user);
 			usersVO.add(userVO);

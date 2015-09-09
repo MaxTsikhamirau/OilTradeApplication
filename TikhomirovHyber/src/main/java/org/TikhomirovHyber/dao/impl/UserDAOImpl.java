@@ -62,7 +62,10 @@ public class UserDAOImpl extends AbstractDAOH<User>implements UserDAOH<User> {
 			query.setParameter("password", password);
 			query.setParameter("login", login);
 			users = query.list();
-			user = users.get(0);
+			logger.debug("Get List of Authorized Users: " + users);
+			if (users.size()!=0) {
+				user = users.get(0);
+			}
 			logger.debug("Get Authorized User: success");
 			tx.commit();
 			logger.info("Get Authorized User: " + user);

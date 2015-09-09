@@ -54,8 +54,8 @@ public class App {
 		newUser.setUser_id(80);
 		//dao.delete(newUser);
 		User authUser=dao.getAuthorizedUser("dan","dan");
-		System.out.println(authUser.getOffers());
-		
+	//	System.out.println(authUser.getOffers());
+		System.out.println(dao.getAll());
 		/*
 		 * 
 		 * Block of adding order*/

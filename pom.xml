@@ -13,6 +13,7 @@
     <module>TikhomirovHyber</module>
     <module>TikhomirovDAOHiber</module>
     <module>TikhomirovVO</module>
+    <module>TikhomirovServiseHyber</module>
   </modules>
  	<build>
 		<plugins>
