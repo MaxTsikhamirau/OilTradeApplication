@@ -62,6 +62,7 @@ public class UserDAOImpl extends AbstractDAOH<User>implements UserDAOH<User> {
 			query.setParameter("password", password);
 			query.setParameter("login", login);
 			users = query.list();
+			System.out.println("users: "+users);
 			logger.debug("Get List of Authorized Users: " + users);
 			if (users.size()!=0) {
 				user = users.get(0);
@@ -74,7 +75,7 @@ public class UserDAOImpl extends AbstractDAOH<User>implements UserDAOH<User> {
 			logger.error("Failed to get Authorized User!");
 			throw new DAOException("Get Authorized User: failed", e);
 		} finally {
-			session.close();
+		//	session.close();
 		}
 		return user;
 	}

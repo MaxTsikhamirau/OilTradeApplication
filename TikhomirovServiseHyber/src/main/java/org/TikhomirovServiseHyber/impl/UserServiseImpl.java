@@ -58,7 +58,7 @@ public class UserServiseImpl implements UserServise {
 		try {
 			List<User> users = userdao.getAll();
 			logger.debug("Start transformation List<User> to List<UserVO>");
-			usersVO = POJOtoVOTransformation.extract(users);
+			usersVO = POJOtoVOTransformation.usersExtract(users);
 			logger.debug("Successfull transformation List<User> to List<UserVO>");
 		} catch (DAOException e) {
 			logger.error("Getting List of users: failed");
@@ -96,7 +96,6 @@ public class UserServiseImpl implements UserServise {
 		user.setUser_id(userVO.getUser_id());
 		try {
 			user = (User) userdao.getById(user);
-			System.out.println(user.getOrders());
 			logger.info("Get user by ID: " + userVO.getUser_id() + " :" + user);
 		} catch (DAOException e) {
 			logger.error("Get user by ID: " + userVO.getUser_id() + " from DataBase: failed");
@@ -108,11 +107,16 @@ public class UserServiseImpl implements UserServise {
 
 	@Override
 	public UserVO getAuthorizedUser(String login, String password) throws ServiseException {
-		logger.info("Start getting  AuthorizedUser ");
+		logger.info("Start getting  AuthorizedUser by login: "+login+" and password: "+password);
 		UserVO userVO = null;
+		User user=null;
 		try {
-			User user = (User) userdao.getAuthorizedUser(login, password);
-			userVO = POJOtoVOTransformation.extract(user);
+			user = (User) userdao.getAuthorizedUser(login, password);
+			logger.info("Authorizarized User from DB: "+user);
+			if(user!=null){
+				logger.info("starting extracting POJO to VO ");
+			userVO = POJOtoVOTransformation.extract(user);}
+			logger.info("Extarcting finished. UserVO: "+userVO);
 		} catch (DAOException e) {
 			logger.error("Get AuthorizedUser: failed");
 			throw new ServiseException("Get AuthorizedUser: failed", e);

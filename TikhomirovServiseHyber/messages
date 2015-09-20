@@ -1,108 +1,136 @@
-2015-09-09 01:01:07 INFO  UserServiseImpl:25 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:01:07 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:02:31 INFO  UserServiseImpl:23 - Start transformation userVO: UserVO [user_id=5, user_name=mikel, login=homyak, password=choowe, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to user
-2015-09-09 01:02:31 INFO  UserServiseImpl:25 - Successful transformation from userVO to user. Transformed user: User [user_id=null, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:02:31 INFO  UserServiseImpl:27 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:02:31 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:06:19 INFO  UserServiseImpl:23 - Start transformation userVO: UserVO [user_id=5, user_name=mikel, login=homyak, password=choowe, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to user
-2015-09-09 01:06:19 INFO  UserServiseImpl:25 - Successful transformation from userVO to user. Transformed user: User [user_id=null, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:06:19 INFO  UserServiseImpl:27 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:06:19 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:07:10 INFO  UserServiseImpl:23 - Start transformation userVO: UserVO [user_id=5, user_name=mikel, login=homyak, password=choowe, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to user
-2015-09-09 01:07:10 INFO  UserServiseImpl:25 - Successful transformation from userVO to user. Transformed user: User [user_id=null, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:07:10 INFO  UserServiseImpl:27 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:07:10 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:07:13 INFO  UserDAOImpl:65 - Get List of Authorized Users: []
-2015-09-09 01:08:24 INFO  UserServiseImpl:23 - Start transformation userVO: UserVO [user_id=5, user_name=mikel, login=homyak, password=choowe, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to user
-2015-09-09 01:08:24 INFO  UserServiseImpl:25 - Successful transformation from userVO to user. Transformed user: User [user_id=null, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:08:24 INFO  UserServiseImpl:27 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:08:24 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:08:26 INFO  UserDAOImpl:65 - Get List of Authorized Users: []
-2015-09-09 01:08:26 INFO  UserDAOImpl:71 - Get Authorized User: null
-2015-09-09 01:08:26 INFO  AbstractDAOH:22 - Start creating object
-2015-09-09 01:13:19 INFO  UserServiseImpl:24 - Start transformation userVO: UserVO [user_id=5, user_name=mikel, login=homyak, password=choowe, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to user
-2015-09-09 01:13:19 INFO  UserServiseImpl:29 - Successful transformation from userVO to user. Transformed user: User [user_id=null, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:13:19 INFO  UserServiseImpl:31 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:13:19 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:13:21 INFO  UserDAOImpl:65 - Get List of Authorized Users: []
-2015-09-09 01:13:21 INFO  UserDAOImpl:71 - Get Authorized User: null
-2015-09-09 01:13:21 INFO  AbstractDAOH:22 - Start creating object
-2015-09-09 01:13:21 INFO  UserServiseImpl:35 - New User: User [user_id=90, user_name=mikel, login=homyak, password=choowe] was successfully created
-2015-09-09 01:36:32 INFO  UserServiseImpl:24 - Start transformation userVO: UserVO [user_id=5, user_name=mikel, login=homyak, password=choowe, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to user
-2015-09-09 01:36:32 INFO  UserServiseImpl:29 - Successful transformation from userVO to user. Transformed user: User [user_id=null, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:36:32 INFO  UserServiseImpl:31 - Trying to add user: User [user_id=null, user_name=mikel, login=homyak, password=choowe] to DataBase
-2015-09-09 01:36:32 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 01:36:36 INFO  UserDAOImpl:65 - Get List of Authorized Users: [User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 01:36:36 INFO  UserDAOImpl:71 - Get Authorized User: User [user_id=90, user_name=mikel, login=homyak, password=choowe]
-2015-09-09 01:36:36 INFO  UserServiseImpl:37 - Warning! User with such login or/and password already exists!
-2015-09-09 01:50:49 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 01:50:49 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:02:04 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:02:04 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:02:06 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:05:56 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:05:56 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:05:59 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:08:32 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:08:32 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:08:34 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:10:57 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:10:57 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:10:59 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:15:45 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:15:45 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:15:47 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:16:30 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:16:30 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:16:32 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:20:06 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:20:06 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:20:08 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:23:06 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:23:06 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:23:08 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=55, user_name=Minimus, login=minimus, password=lloid], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=72, user_name=Nike, login=just_do_it!, password=just_do_it], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:24:15 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:24:15 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:24:17 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:25:37 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:25:37 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:25:40 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:27:55 INFO  UserServiseImpl:56 - Start getting List of users
-2015-09-09 02:27:55 INFO  AbstractDAOH:46 - Start getting List of objects
-2015-09-09 02:27:57 INFO  AbstractDAOH:57 - Get list of objects: [User [user_id=1, user_name=Alex, login=alex, password=alex123], User [user_id=2, user_name=Max, login=max, password=max], User [user_id=3, user_name=Daniel, login=dan, password=dan], User [user_id=4, user_name=Yuliya, login=yuliya, password=lilliebillie], User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment], User [user_id=56, user_name=Minimus, login=minimus, password=lloid], User [user_id=88, user_name=Benjamin, login=Ben!, password=Aflek], User [user_id=90, user_name=mikel, login=homyak, password=choowe]]
-2015-09-09 02:27:57 INFO  UserServiseImpl:67 - Successfull getting List of users
-2015-09-09 02:38:34 INFO  UserServiseImpl:74 - Start deleting user: UserVO [user_id=5, user_name=null, login=null, password=null, city=null, country=null, telephone=null, rolesVO=null, ordersVO=null, offersVO=null]
-2015-09-09 02:38:34 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 02:38:36 INFO  UserDAOImpl:71 - Get Authorized User: null
-2015-09-09 02:38:36 INFO  UserServiseImpl:83 - Warning! Can't delete user. User wasn't found in DataBase!
-2015-09-09 02:39:08 INFO  UserServiseImpl:74 - Start deleting user: UserVO [user_id=90, user_name=null, login=null, password=null, city=null, country=null, telephone=null, rolesVO=null, ordersVO=null, offersVO=null]
-2015-09-09 02:39:08 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 02:39:10 INFO  UserDAOImpl:71 - Get Authorized User: null
-2015-09-09 02:39:10 INFO  UserServiseImpl:83 - Warning! Can't delete user. User wasn't found in DataBase!
-2015-09-09 02:43:13 INFO  UserServiseImpl:74 - Start deleting user: UserVO [user_id=90, user_name=null, login=null, password=null, city=null, country=null, telephone=null, rolesVO=null, ordersVO=null, offersVO=null]
-2015-09-09 02:43:13 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 02:50:41 INFO  UserServiseImpl:74 - Start deleting user: UserVO [user_id=90, user_name=null, login=null, password=null, city=null, country=null, telephone=null, rolesVO=null, ordersVO=null, offersVO=null]
-2015-09-09 02:50:41 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 02:50:43 INFO  AbstractDAOH:72 - Start deleting object: User [user_id=90, user_name=null, login=null, password=null]
-2015-09-09 02:50:43 INFO  AbstractDAOH:83 - Object User [user_id=90, user_name=mikel, login=homyak, password=choowe] is deleted
-2015-09-09 02:50:43 INFO  UserServiseImpl:84 - User: User [user_id=90, user_name=null, login=null, password=null] was successfully deleted
-2015-09-09 02:59:36 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:00:29 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:00:29 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 03:00:31 INFO  UserServiseImpl:99 - Get user by ID: 54 :User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment]
-2015-09-09 03:01:51 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:01:51 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 03:01:53 INFO  UserServiseImpl:99 - Get user by ID: 54 :User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment]
-2015-09-09 03:02:41 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:02:41 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 03:03:34 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:03:34 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 03:04:16 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:04:16 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 03:04:18 INFO  UserServiseImpl:99 - Get user by ID: 54 :User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment]
-2015-09-09 03:05:33 INFO  UserServiseImpl:94 - Start getting user by ID: 54
-2015-09-09 03:05:33 INFO  AbstractDAOH:100 - Start getting by ID
-2015-09-09 03:05:35 INFO  UserServiseImpl:100 - Get user by ID: 54 :User [user_id=54, user_name=Maximus, login=maximus, password=maxentertainment]
-2015-09-09 03:14:53 INFO  UserServiseImpl:111 - Start getting  AuthorizedUser 
-2015-09-09 03:14:53 INFO  UserDAOImpl:51 - Start getting Authorized User
-2015-09-09 03:14:55 INFO  UserDAOImpl:71 - Get Authorized User: User [user_id=3, user_name=Daniel, login=dan, password=dan]
+2015-09-17 05:09:41 INFO  UserServiseImpl:110 - Start getting  AuthorizedUser by login: dan and password: fsdfd
+2015-09-17 05:09:41 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-17 05:09:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-09-17 05:09:42 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-09-17 05:09:42 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-09-17 05:09:42 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-09-17 05:09:42 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-09-17 05:09:42 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-09-17 05:09:43 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2015-09-17 05:09:43 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-09-17 05:09:43 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/oiltradehib]
+2015-09-17 05:09:43 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2015-09-17 05:09:43 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2015-09-17 05:09:43 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2015-09-17 05:09:44 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-09-17 05:09:45 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-09-17 05:09:45 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-09-17 05:09:45 INFO  Version:27 - HV000001: Hibernate Validator 4.3.0.Final
+2015-09-17 05:09:47 INFO  UserDAOImpl:72 - Get Authorized User: null
+2015-09-17 05:09:47 INFO  UserServiseImpl:115 - Authorizarized User from DB: null
+2015-09-17 05:09:47 INFO  UserServiseImpl:119 - Extarcting finished. UserVO: null
+2015-09-17 05:09:47 INFO  OfferServiseImpl:46 - Start getting List of offers
+2015-09-17 05:09:47 INFO  AbstractDAOH:46 - Start getting List of objects
+2015-09-17 05:09:47 INFO  AbstractDAOH:57 - Get list of objects: [Offer [offer_id=1, quantity=10, price=100], Offer [offer_id=2, quantity=10, price=100], Offer [offer_id=4, quantity=10, price=78], Offer [offer_id=5, quantity=555, price=556]]
+2015-09-17 05:09:47 INFO  OfferServiseImpl:57 - Successfull getting List of offers
+2015-09-17 05:09:47 INFO  OrderServiseImpl:48 - Start getting List of orders
+2015-09-17 05:09:47 INFO  AbstractDAOH:46 - Start getting List of objects
+2015-09-17 05:09:47 INFO  AbstractDAOH:57 - Get list of objects: [Order [order_id=1, quantity=1000, price=50], Order [order_id=2, quantity=333, price=5555], Order [order_id=4, quantity=5, price=78], Order [order_id=5, quantity=555, price=556]]
+2015-09-17 05:09:47 INFO  OrderServiseImpl:59 - Successfull getting List of orders
+2015-09-17 05:10:11 INFO  OrderServiseImpl:32 - Start adding orderVO: OrderVO [order_id=null, quantity=897, price=1230, sortVO=SortVO [sort_id=null, sort_name=WTI], userVO=UserVO [user_id=5, user_name=uuuuuu, login=oooo, password=aaaaa, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null]] to DataBase: 
+2015-09-17 05:10:11 INFO  OrderServiseImpl:36 - Trying to add order: Order [order_id=null, quantity=897, price=1230] to DataBase
+2015-09-17 05:10:11 INFO  AbstractDAOH:22 - Start creating object
+2015-09-17 05:10:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-09-17 05:10:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-09-17 05:10:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-09-17 05:10:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-09-17 05:10:12 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-09-17 05:10:12 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-09-17 05:10:12 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2015-09-17 05:10:12 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-09-17 05:10:12 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/oiltradehib]
+2015-09-17 05:10:12 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2015-09-17 05:10:12 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2015-09-17 05:10:12 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2015-09-17 05:10:12 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-09-17 05:10:13 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-09-17 05:10:13 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-09-17 05:10:13 INFO  Version:27 - HV000001: Hibernate Validator 4.3.0.Final
+2015-09-17 05:10:14 WARN  SqlExceptionHelper:144 - SQL Error: 1452, SQLState: 23000
+2015-09-17 05:10:14 ERROR SqlExceptionHelper:146 - Cannot add or update a child row: a foreign key constraint fails (`oiltradehib`.`user_detail`, CONSTRAINT `FK_user_detail_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`))
+2015-09-17 05:10:14 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2015-09-17 05:18:46 INFO  UserServiseImpl:24 - Start adding userVO: UserVO [user_id=5, user_name=uuuuuu, login=oooo, password=aaaaa, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null] to DataBase: 
+2015-09-17 05:18:46 INFO  UserServiseImpl:31 - Trying to add user: User [user_id=5, user_name=uuuuuu, login=oooo, password=aaaaa] to DataBase
+2015-09-17 05:18:46 INFO  UserDAOImpl:51 - Start getting Authorized User
+2015-09-17 05:18:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-09-17 05:18:46 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-09-17 05:18:46 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-09-17 05:18:46 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-09-17 05:18:46 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-09-17 05:18:46 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-09-17 05:18:46 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2015-09-17 05:18:46 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-09-17 05:18:46 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/oiltradehib]
+2015-09-17 05:18:46 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2015-09-17 05:18:46 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2015-09-17 05:18:46 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2015-09-17 05:18:47 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-09-17 05:18:47 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-09-17 05:18:47 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-09-17 05:18:47 INFO  Version:27 - HV000001: Hibernate Validator 4.3.0.Final
+2015-09-17 05:18:48 INFO  UserDAOImpl:72 - Get Authorized User: null
+2015-09-17 05:18:48 INFO  AbstractDAOH:22 - Start creating object
+2015-09-17 05:18:48 INFO  UserServiseImpl:35 - New User: User [user_id=90, user_name=uuuuuu, login=oooo, password=aaaaa] was successfully created
+2015-09-17 05:19:49 INFO  OrderServiseImpl:32 - Start adding orderVO: OrderVO [order_id=null, quantity=897, price=1230, sortVO=SortVO [sort_id=null, sort_name=WTI], userVO=UserVO [user_id=5, user_name=uuuuuu, login=oooo, password=aaaaa, city=Liverpool, country=UK, telephone=002356, rolesVO=null, ordersVO=null, offersVO=null]] to DataBase: 
+2015-09-17 05:19:49 INFO  OrderServiseImpl:36 - Trying to add order: Order [order_id=null, quantity=897, price=1230] to DataBase
+2015-09-17 05:19:49 INFO  AbstractDAOH:22 - Start creating object
+2015-09-17 05:19:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-09-17 05:19:49 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-09-17 05:19:49 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-09-17 05:19:49 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-09-17 05:19:49 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-09-17 05:19:49 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-09-17 05:19:49 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2015-09-17 05:19:49 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-09-17 05:19:49 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/oiltradehib]
+2015-09-17 05:19:49 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2015-09-17 05:19:49 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2015-09-17 05:19:49 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2015-09-17 05:19:50 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-09-17 05:19:50 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-09-17 05:19:50 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-09-17 05:19:50 INFO  Version:27 - HV000001: Hibernate Validator 4.3.0.Final
+2015-09-17 05:19:51 WARN  SqlExceptionHelper:144 - SQL Error: 1452, SQLState: 23000
+2015-09-17 05:19:51 ERROR SqlExceptionHelper:146 - Cannot add or update a child row: a foreign key constraint fails (`oiltradehib`.`user_detail`, CONSTRAINT `FK_user_detail_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`))
+2015-09-17 05:19:51 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2015-09-17 05:23:49 INFO  OrderServiseImpl:32 - Start adding orderVO: OrderVO [order_id=null, quantity=897, price=1230, sortVO=SortVO [sort_id=null, sort_name=WTI], userVO=UserVO [user_id=null, user_name=Hleb, login=null, password=null, city=null, country=null, telephone=0023, rolesVO=null, ordersVO=null, offersVO=null]] to DataBase: 
+2015-09-17 05:23:49 INFO  OrderServiseImpl:36 - Trying to add order: Order [order_id=null, quantity=897, price=1230] to DataBase
+2015-09-17 05:23:49 INFO  AbstractDAOH:22 - Start creating object
+2015-09-17 05:23:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-09-17 05:23:49 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-09-17 05:23:49 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-09-17 05:23:49 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-09-17 05:23:49 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-09-17 05:23:49 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-09-17 05:23:49 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2015-09-17 05:23:49 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-09-17 05:23:49 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/oiltradehib]
+2015-09-17 05:23:49 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2015-09-17 05:23:49 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2015-09-17 05:23:49 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2015-09-17 05:23:50 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-09-17 05:23:50 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-09-17 05:23:50 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-09-17 05:23:50 INFO  Version:27 - HV000001: Hibernate Validator 4.3.0.Final
+2015-09-17 05:23:52 INFO  OrderServiseImpl:39 - New order: Order [order_id=6, quantity=897, price=1230] was successfully created
+2015-09-17 05:30:58 INFO  OfferServiseImpl:28 - Start adding offerVO: OfferVO [offer_id=null, quantity=null, price=null, sortVO=null, userVO=null] to DataBase: 
+2015-09-17 05:31:51 INFO  OfferServiseImpl:28 - Start adding offerVO: OfferVO [offer_id=null, quantity=11, price=12, sortVO=SortVO [sort_id=null, sort_name=WTI], userVO=UserVO [user_id=null, user_name=Hleb, login=null, password=null, city=null, country=null, telephone=0023, rolesVO=null, ordersVO=null, offersVO=null]] to DataBase: 
+2015-09-17 05:31:51 INFO  OfferServiseImpl:32 - Trying to add order: Offer [offer_id=null, quantity=11, price=12] to DataBase
+2015-09-17 05:31:51 INFO  AbstractDAOH:22 - Start creating object
+2015-09-17 05:31:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-09-17 05:31:51 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-09-17 05:31:51 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-09-17 05:31:51 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-09-17 05:31:51 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-09-17 05:31:51 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-09-17 05:31:51 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2015-09-17 05:31:52 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-09-17 05:31:52 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/oiltradehib]
+2015-09-17 05:31:52 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2015-09-17 05:31:52 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2015-09-17 05:31:52 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2015-09-17 05:31:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-09-17 05:31:52 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-09-17 05:31:52 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-09-17 05:31:52 INFO  Version:27 - HV000001: Hibernate Validator 4.3.0.Final
+2015-09-17 05:31:53 INFO  OfferServiseImpl:35 - New offer: Offer [offer_id=6, quantity=11, price=12] was successfully created

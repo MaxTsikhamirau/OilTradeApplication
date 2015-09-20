@@ -78,9 +78,15 @@ public abstract class AbstractDAOH<T> implements GenericDAOH<T> {
 			tx = session.beginTransaction();
 			object = (T) session.get(getObjectClass(), getId(object));
 			logger.debug("Object to delete: " + object);
-			session.delete(object);
+			if (object != null) {
+				session.delete(object);
+				logger.info("Object " + object + " is deleted");
+			}
+			else{
+				logger.info("Object " + object + " can't be deleted. Doesn't exist");
+			}
 			tx.commit();
-			logger.info("Object " + object + " is deleted");
+			
 		} catch (PersistenceException e) {
 			tx.rollback();
 			logger.error("Failed to delete object!");

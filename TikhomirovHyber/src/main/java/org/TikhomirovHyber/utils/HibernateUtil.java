@@ -1,27 +1,33 @@
 package org.TikhomirovHyber.utils;
 
-import org.hibernate.Session;
+
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+
+
+
 public class HibernateUtil {
-	private static final SessionFactory sessionFactory;
+	   private static SessionFactory sessionFactory = buildSessionFactory();;
+	    
+	   public static SessionFactory buildSessionFactory() {
+	       try {
+	    	   Configuration configuration = new Configuration().configure();
+	    	   StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().
+	    	   applySettings(configuration.getProperties());
+	    	   sessionFactory = configuration.buildSessionFactory(builder.build());
+	    	   System.out.println("Session Factory created");
+	        return sessionFactory;
+	      
+	       } catch (Throwable ex) {
+	         System.err.println("Initial SessionFactory creation failed." + ex);
+	         throw new ExceptionInInitializerError(ex);
+	       }
+	     }
 
-	static {
-		try {
-			System.out.println("Trying to create Session factory");
-			sessionFactory = new Configuration().configure().buildSessionFactory();
-			System.out.println("Session factory created");
-		} catch (Throwable ex) {
-			System.out.println("Failed to create Session factory");
-			throw new ExceptionInInitializerError(ex);
-		}
-	}
+	     public static SessionFactory getSessionFactory() {
+	       return sessionFactory;
+	     }
+	 }
 
-	public static SessionFactory getSessionFactory() {
-		return sessionFactory;
-	}
-
-	
-
-}

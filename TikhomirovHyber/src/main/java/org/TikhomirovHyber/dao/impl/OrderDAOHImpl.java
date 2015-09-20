@@ -48,7 +48,9 @@ public class OrderDAOHImpl extends AbstractDAOH<Order>implements OrderDAOH<Order
 		GenericDAOH<User> userDao = UserDAOImpl.getInstance();
 		Set<Order> orders = new HashSet<Order>();
 		try {
+			System.out.println("hghghg user: "+user);
 			User requiredUser = (User) userDao.getById(user);
+			System.out.println("required: "+requiredUser);
 			orders = requiredUser.getOrders();
 		} catch (HibernateException e) {
 			logger.error("Failed to get orders by user " + user);
